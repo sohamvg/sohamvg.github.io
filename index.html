@@ -114,6 +114,27 @@
     .entry-date { display: block; margin-top: 0.1rem; }
   }
 
+  /* ---- skills ---- */
+  .skills {
+    color: var(--mute);
+    margin: 0;
+  }
+  .skills p {
+    display: flex;
+    gap: 1rem;
+    margin: 0 0 0.6rem;
+  }
+  .skills p:last-child { margin-bottom: 0; }
+  .skills b {
+    color: var(--fg);
+    font-weight: 550;
+    flex: 0 0 8.5rem;
+  }
+  @media (max-width: 480px) {
+    .skills p { display: block; }
+    .skills b { display: block; }
+  }
+
   /* ---- links ---- */
   a {
     color: var(--link);
@@ -179,6 +200,17 @@
         <div class="entry-title">B.Tech, Computer Science</div>
         <div class="entry-sub">Indian Institute of Technology, Delhi</div>
       </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <p><b>Languages</b><span>Python, C++, Java, SQL, TypeScript</span></p>
+      <p><b>Frameworks</b><span>Django, FastAPI, PyTorch, React</span></p>
+      <p><b>Infrastructure</b><span>AWS, Docker, Kubernetes, Postgres, Redis</span></p>
+      <p><b>Domains</b><span>Distributed systems, ML infrastructure, API design</span></p>
     </div>
   </section>
 
